@@ -1,0 +1,431 @@
+html {
+
+}
+body {
+	font-family: $second-font;
+}
+h1,h2{
+	font-family: $font-choice;
+
+}
+.top-bar{
+	background-color:$color-prime;
+	padding-left: 2rem;
+	// opacity: 0.7;
+	// display: flex;
+	// justify-content: space-around;
+}
+.top-bar ul{
+	background-color: $color-prime;
+}
+.menu > li > a{
+	margin: 2rem;
+
+	@include screen(large){
+		margin: 2rem 0rem 0rem 0rem;
+	}
+}
+.about-container{
+	background-image: url(../images/about-background.jpg);
+    padding: 0rem 0rem 0rem 3.5rem;
+    background-size: cover;
+    background-position: top center;
+    margin: 0rem;
+}
+[type='text']{
+	padding: 2rem;
+    border: 1px solid $font-color-prime;
+
+}
+[type='email']{
+	padding: 2rem;
+    border: 1px solid $font-color-prime;
+}
+.row{
+	max-width: 100%;
+}
+.contact{
+	background-color: $font-color-prime;
+	padding-top: 2rem;
+	padding-left: 0rem;
+	padding-bottom: 4.5rem;
+
+	h2{
+		color: $bg-color;
+		padding-left: 3rem;
+	}
+}
+.text-about{
+	padding-left: 3rem;
+	width: 80%;
+    line-height: 3;
+}
+.contact-info{
+    width: 52%;
+    padding: 0rem 0rem 0rem 2rem;
+    margin-bottom: 7.8rem;
+    margin-top: 2rem;
+}
+.contact-form{
+	background-color: $bg-color;
+	padding-top: 2rem;
+	text-align: center;
+
+	h2{
+		margin-bottom: 1rem;
+		color: $color-second;
+	}
+}
+.project-container{
+	position: relative;
+	z-index: 0;
+	
+	h1{
+		background-color: $color-prime ;
+		color: $bg-color;
+		width: 25%;
+		padding-left: 3.5rem;
+    	padding-top: 1rem;
+    	padding-bottom: 1rem;
+    	margin-top: 1rem;
+	}
+
+	article{
+		a{
+			width: 100%;
+			text-align: center;
+			img{
+				width: 500px;
+			}
+		}
+	}
+}
+.header{
+	color: $font-color-prime;
+}
+.project-container h2::before{
+    position: absolute;
+    background-color: $color-second;
+    top: -5px;
+    content: "";
+    padding: 1rem;
+    width: 25.5%;
+    left: 0px;
+    z-index: -1;
+    height: 6.2rem;
+}
+.margin-between-rows{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.padding-between-columns{
+	padding-left: 3rem;
+}
+.margin-left{
+	margin-left: 0;
+}
+.thumbnail{
+	width: 75%;
+}
+.send{
+	border: 1px solid $font-color-prime;
+	color:$bg-color;
+	margin-bottom: 1rem;
+    width: 100%;
+    padding: 1rem;
+    color: $color-footer;
+}
+.send:hover{
+	background-color: $font-color-prime;
+}
+
+.about{
+	background-color: #F7F7F7;
+	opacity: 0.8;
+	width: 31%;
+    padding: 0rem 2rem 0rem 2rem;
+
+    h2{
+    	padding-top: 4rem;
+    	border-bottom: 1px solid $color-prime;
+    	color: $color-prime;
+    }
+    p{
+    	line-height: 2.5rem;
+    	color: $color-prime;
+    }
+}
+.about-social li img{
+	height: 1.5rem;
+}
+.about-social li{
+	padding: 0rem 1rem 1rem 1rem;
+}
+.about-social{
+	display: flex;
+}
+.tech-list{
+	position: relative;
+	background-color: $bg-color;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	z-index: 0;
+	h2{
+		background-color: $color-prime ;
+		color: $bg-color;
+		width: 25%;
+		padding-left: 3.5rem;
+    	padding-top: 1rem;
+    	padding-bottom: 1rem;
+
+    	@include screen(large){
+    	 width: 32%;
+    }
+	}
+	li{
+		margin-bottom: 1rem;
+		margin-top: 1rem;
+	}
+}
+.button:hover, .button:focus{
+	background-color: $font-color-prime;
+}
+a:hover, a:focus{
+	background-color: $font-color-prime;
+	color: $bg-color;
+}
+.view-button:hover{
+	background-color: $font-color-prime;
+	color:$bg-color;
+}
+.readMore:hover{
+	background-color: $font-color-prime;
+	color:$bg-color;
+}
+.tech-list ul{
+	display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#php{
+	background-image: url(../svg/php-plain.svg);
+	background-repeat: no-repeat;
+	text-indent: 3rem;
+    padding: 1rem;
+}
+#html{
+	background-image: url(../svg/html5-plain.svg);
+	background-repeat: no-repeat;
+	text-indent: 3rem;
+    padding: 1rem;
+}
+#css{
+	background-image: url(../svg/css3-plain.svg);
+	background-repeat: no-repeat;
+	text-indent: 3rem;
+    padding: 1rem;
+}
+#js{
+	background-image: url(../svg/javascript-plain.svg);
+	background-repeat: no-repeat;
+    text-indent: 3rem;
+    padding: 1rem;
+}
+#c{
+	background-image: url(../svg/csharp-plain.svg);
+	background-repeat: no-repeat;
+    text-indent: 3rem;
+    padding: 1rem;
+}
+.tech-list h2::before{
+    position: absolute;
+    background-color: $color-second;
+    top: 20px;
+    content: "";
+    padding: 1rem;
+    width: 25.5%;
+    left: 0px;
+    z-index: -1;
+    height: 5.2rem;
+
+    @include screen(large){
+    	 width: 32.7%;
+    }
+}
+.readMore{
+    background-color: transparent;
+    border: 1px solid $color-prime;
+    color: #272425;
+    margin-bottom: 3rem;
+    outline: none;
+    padding: 0.85em 1em;
+}
+nav h1{
+	background-image: url(../svg/logo.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-indent: 6rem;
+	color: $bg-color;
+}
+.banner{
+	font-family: $font-choice;
+	background-image: url(../images/header-image.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 8rem;
+	padding-bottom: 3rem;
+	background-position: 0px -14rem;
+
+	@include screen(large){
+		padding-top: 3rem;
+    	padding-bottom: 0rem;
+    	background-position: 0px -10rem;
+	}
+
+}
+.orbit-bullets{
+	text-align: left;
+    padding-left: 4rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 1px;
+}
+.orbit-slide{
+	height:500px;
+	position:relative;
+
+	@include screen(large){
+		height: 379px;
+	}
+}
+.orbit-bullets button{
+	outline: none;
+}
+.orbit-previous{
+	outline: none;
+}
+.orbit-next{
+	outline: none;
+}
+.orbit-bullets button.is-active{
+	background-color: $font-color-prime;
+}
+
+.ban-quote{
+	font-weight: bold;
+	color: $bg-color;
+	padding-left: 1rem;
+	padding-top: 1rem;
+}
+.ban-quote-second{
+	color: $bg-color;
+	padding-left: 1rem;
+}
+.quote-container{
+	border: 1px solid $bg-color;
+	width: 50%;
+	margin-left: 6rem;
+	padding: 1rem 0rem 1rem 1rem;
+
+	@include screen(large){
+		width: 70%;
+    	margin-left: 4rem;
+    	padding: 0rem 0rem 0rem 0rem;
+	}
+}
+.button{
+	margin: 1rem 0 1rem 6rem;
+	background-color: #F2EB03;
+	color: $color-footer;
+	margin-bottom: 3rem;
+	
+	@include screen(large){	
+    	margin-left: 4rem;
+	}
+
+}
+.view-button{
+	border: 1px solid $font-color-prime;
+	padding: 1.05em 3em;
+	margin-right: 2rem;
+	margin-top: 1.5rem;
+}
+.featuredWork h1{
+	color: $font-color-prime;
+	font-family: $font-choice;
+	margin-bottom: 0;
+	margin-left: 3rem;
+	margin-top: 1rem;
+}
+.featuredWork p{
+	color: #272425;
+	margin-bottom: 0;
+	margin-left: 3rem;
+}
+.featured-content{
+	display: flex;
+ 	justify-content: space-between;	
+}
+// .orbit{
+// 	background-color: $color-second;
+// }
+.orbit-container{
+	margin-top: 3rem;
+	height: 739.07px;
+}
+footer{
+	background-color: $color-footer;
+
+	p{
+		color: $bg-color;
+	}
+}
+.contact-container{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 3rem;
+	margin-left: 3rem;
+    margin-right: 3rem;
+
+    @include screen(large){
+    	 margin-left: 1rem;
+    }
+}
+.email{
+	background-image: url(../svg/email.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-indent: 3rem;
+    margin-left: 1rem;
+}
+.phone{
+	background-image: url(../svg/phone.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-indent: 3rem;
+    margin-left: 1rem;
+}
+.social{
+	display: flex;
+   
+}
+.social li img{
+	height: 1.5rem;
+}
+.social li{
+	padding: 0rem 1rem 1rem 1rem;
+}
+ul{
+	list-style: none;
+}
+strong{
+	font-weight: 800;
+}
+a{
+	color: $bg-color;
+	font-family: $second-font;
+}
+
+
+
