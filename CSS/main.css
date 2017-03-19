@@ -4345,6 +4345,9 @@ h1, h2 {
   padding: 2rem;
   border: 1px solid #219A7B; }
 
+textarea {
+  border: 1px solid #219A7B; }
+
 .row {
   max-width: 100%; }
 
